@@ -16,7 +16,7 @@ module.exports = {
 			console.error(err);
 			message.channel.send('there was an error trying to prune messages in this channel!');
 		});
-		} else if (client.member.cache.get(author).roles) {
+		} else if (message.mentions.members.first().roles.highest.id === '703338508919504956') {
 
 		}
 	},
